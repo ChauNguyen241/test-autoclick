@@ -22,7 +22,7 @@
   <script>
     setInterval(() => {
       document.getElementById("report").src += "";
-    }, 300000); // Refresh every 5 minutes (300,000 ms)
+    }, 10); // Refresh every 10 seconds (300,000 ms)
   </script>
 </body>
 </html>
