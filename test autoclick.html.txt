@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Auto-Refresh Power BI</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #000;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="report" src="https://app.powerbi.com/groups/me/apps/5c70db0a-80e7-4b0c-adc7-44caa432037d/reports/5337968f-e73a-41e9-8c1d-cdde9d80f601/79f648a8e23013679f7c?experience=power-bi" allowfullscreen></iframe>
+
+  <script>
+    setInterval(() => {
+      document.getElementById("report").src += "";
+    }, 300000); // Refresh every 5 minutes (300,000 ms)
+  </script>
+</body>
+</html>
